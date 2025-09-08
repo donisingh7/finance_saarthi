@@ -1,0 +1,47 @@
+.service-box {
+  height: 250px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.service-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  
+}
+
+.service-box:hover img {
+  transform: scale(1.1);
+}
+
+
+.service-box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.service-box:hover .overlay {
+  opacity: 1;
+}
+.lead{
+  font-size: 1.4rem;
+  font-family:  serif;
+}
+.desc{
+  font-size: 1.2rem;
+}
+
+

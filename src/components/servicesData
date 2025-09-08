@@ -1,0 +1,69 @@
+// servicesData.js
+ export const servicesData = [
+  {
+    category: "Wealth & Investment",
+    subServices: [
+      { title: "Wealth Management", path: "/services/wealth-management" },
+      { title: "Investment Advisory", path: "/services/investment-advisory" },
+      { title: "Retirement Planning", path: "/services/retirement-planning" },
+      { title: "Estate Planning", path: "/services/estate-planning" },
+      { title: "Loan Advisory", path: "/services/loan-advisory" },
+    ]
+  },
+  {
+    category: "Taxation & Compliance",
+    subServices: [
+      { title: "Tax Advisory & Planning", path: "/services/tax-advisory" },
+      { title: "Audit & Assurance", path: "/services/audit-assurance" },
+      { title: "Regulatory Compliance", path: "/services/regulatory-compliance" },
+      { title: "Tax Compliance", path: "/services/tax-compliance" },
+    ]
+  },
+  {
+    category: "Corporate Finance",
+    subServices: [
+      { title: "M&A Advisory", path: "/services/ma-advisory" },
+      { title: "Fundraising & Capital Raising", path: "/services/fundraising" },
+      { title: "Corporate Strategy", path: "/services/corporate-strategy" },
+      { title: "Valuation Services", path: "/services/valuation" },
+    ]
+  },
+  {
+    category: "Risk & Governance",
+    subServices: [
+      { title: "Risk Management", path: "/services/risk-management" },
+      { title: "Fraud & Investigations", path: "/services/fraud-investigations" },
+      { title: "Governance, Risk & Compliance", path: "/services/grc" },
+    ]
+  },
+  {
+    category: "Technology & Digital",
+    subServices: [
+      { title: "Technology Transformation", path: "/services/technology-transformation" },
+      { title: "Cybersecurity", path: "/services/cybersecurity" },
+      { title: "FinTech Advisory", path: "/services/fintech" },
+    ]
+  },
+  {
+    category: "Sustainability & ESG",
+    subServices: [
+      { title: "ESG & Sustainability Advisory", path: "/services/esg-advisory" },
+      { title: "Sustainable Finance", path: "/services/sustainable-finance" },
+    ]
+  },
+  {
+    category: "Specialized Advisory",
+    subServices: [
+      { title: "Actuarial Services", path: "/services/actuarial" },
+      { title: "Forensic Technology", path: "/services/forensic-tech" },
+      { title: "Special Situations & Turnaround", path: "/services/special-situations" },
+    ]
+  },
+  {
+    category: "Insurance Consulting",
+    subServices: [
+      { title: "Life & Health Insurance", path: "/services/life-insurance" },
+      { title: "Business & Property Insurance", path: "/services/business-insurance" },
+    ]
+  }
+];
