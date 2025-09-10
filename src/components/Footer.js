@@ -78,9 +78,9 @@ function Footer() {
           <div>
             <h4 class="relative text-sm font-extrabold uppercase tracking-wide text-white after:mt-1 after:block after:h-0.5 after:w-12 after:bg-amber-400 after:content-['']">COMPANY</h4>
                 <ul class="mt-6 space-y-3">
-                  <li><a class="text-neutral-300 hover:text-white hover:underline underline-offset-4 text-decoration-none" href="/about">About Us</a></li>
-                  <li><a class="text-neutral-300 hover:text-white hover:underline underline-offset-4 text-decoration-none" href="/blog">Services</a></li>
-                  <li><a class="text-neutral-300 hover:text-white hover:underline underline-offset-4 text-decoration-none" href="/contact">Contact Us</a></li></ul></div>
+                  <li><a class="text-neutral-300 hover:text-white hover:underline underline-offset-4 text-decoration-none" href="/aboutpage">About Us</a></li>
+                  <li><a class="text-neutral-300 hover:text-white hover:underline underline-offset-4 text-decoration-none" href="/industries">Industries</a></li>
+                  <li><a class="text-neutral-300 hover:text-white hover:underline underline-offset-4 text-decoration-none" href="/contactpage">Contact Us</a></li></ul></div>
 
 
           {/* Company

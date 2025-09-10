@@ -842,10 +842,6 @@ h2 {
   padding: 16px 18px 10px;
   z-index: 9999;
 }
-/* 
-.has-mega:hover .mega,
-.has-mega:focus-within .mega,
-.has-mega.open .mega { display: block; } */
 
 .mega-heading {
   text-align: center; color: #6b7280;
@@ -896,6 +892,147 @@ h2 {
 .has-mega:not(.open):hover .mega {
   display: none !important;
 }
+
+/* === MOBILE NAV ADDITIONS (no desktop changes removed) === */
+
+/* Hidden by default (desktop) */
+.mobile-toggle {
+  display: none;
+}
+
+/* Mobile panel hidden by default */
+.mobile-panel {
+  display: none;
+  position: fixed;
+  top: 64px;               /* below your fixed navbar */
+  left: 0;
+  right: 0;
+  background: #0b0b0b;
+  color: #e5e7eb;
+  border-top: 1px solid #1f2937;
+  max-height: calc(100vh - 64px);
+  overflow-y: auto;
+  transform: translateY(-8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform .18s ease, opacity .18s ease;
+  z-index: 9998;
+}
+.mobile-panel.show {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-group { padding: 14px 18px 24px; }
+
+.mobile-link {
+  display: block;
+  padding: 12px 6px;
+  color: #e5e7eb;
+  text-decoration: none;
+  border-bottom: 1px solid #1f2937;
+}
+.mobile-link:hover { color: #fff; }
+
+.mobile-cta {
+  display: block;
+  margin-top: 12px;
+  text-align: center;
+  background: #e6ecf6;
+  color: #000;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+/* Accordion for Services (mobile) */
+.mobile-accordion {
+  width: 100%;
+  background: transparent;
+  color: #e5e7eb;
+  border: 0;
+  padding: 12px 6px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 1px solid #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.mobile-accordion .chev { transition: transform .16s ease; }
+.mobile-accordion .chev.rot { transform: rotate(180deg); }
+
+.mobile-accordion-panel {
+  display: none;
+  padding: 6px 0 10px 6px;
+}
+.mobile-accordion-panel.open { display: block; }
+
+.mobile-section {
+  margin: 10px 0 6px;
+  color: #9ca3af;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.mobile-sublink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0 8px 4px;
+  color: #cbd5e1;
+  text-decoration: none;
+}
+.mobile-sublink:hover { color: #fff; }
+
+/* --- RESPONSIVE SWITCH --- */
+@media (max-width: 1024px) {
+  /* show hamburger, hide desktop links/cta */
+  .mobile-toggle {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-left: auto;          /* push to right in grid center column */
+    background: transparent;
+    border: 0;
+    width: 34px; height: 28px;
+    cursor: pointer;
+  }
+  .mobile-toggle span {
+    height: 2px; width: 100%;
+    background: #e5e7eb;
+    display: block;
+    transition: transform .18s ease, opacity .18s ease;
+  }
+  .mobile-toggle.active span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .mobile-toggle.active span:nth-child(2) { opacity: 0; }
+  .mobile-toggle.active span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+  .nav-links,
+  .btn-get-started {
+    display: none !important;   /* keep desktop pristine; just hide on mobile */
+  }
+
+  .nav-inner {
+    grid-template-columns: 1fr auto;   /* logo | burger */
+    padding: 10px 16px;
+  }
+
+  /* Ensure the fixed navbar height leaves room for panel top */
+  .navbar { padding: 0.6rem 5%; }
+}
+
+/* Tweak mega grid stacking already included in your CSS */
+@media (max-width: 900px) {
+  .mega-grid { grid-template-columns: 1fr; }
+}
+
+
+/* //services */
 
 
 .service-box {
