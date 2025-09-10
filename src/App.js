@@ -5,7 +5,8 @@ import Industries from './components/Industries';
 import ContactPage from './components/ContactPage';
 import Navbar from "./components/Navbar";
 import AppRoutes from './routes/AppRoutes';
-
+import AboutPage from './components/AboutPage';
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,9 +15,11 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/industries" element={<Industries />} />
-        <Route path="/contactpage" element={<ContactPage />} />
+        <Route path="/aboutpage" element={<AboutPage />} />
+        <Route path="/contactpage" element={<ContactPage />} /> 
       </Routes>
-      <AppRoutes  />
+      <AppRoutes />
+      <Footer />
     </Router>
   );
 }

@@ -58,7 +58,7 @@ function Footer() {
                 <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"></path>
                 </svg>
                 </span>
-                <a href="mailto:team.financesaarthi@gmail.com" class="text-neutral-300 hover:text-white hover:underline underline-offset-4">team.financesaarthi@gmail.com</a>
+                <a href="mailto:team.financesaarthi@gmail.com" class="text-neutral-300 hover:text-white hover:underline underline-offset-4 text-decoration-none">team.financesaarthi@gmail.com</a>
                 </li>
                 <li class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-md border border-neutral-500/40">
                 <svg viewBox="0 0 24 24" class="h-5 w-5 text-amber-300" fill="currentColor">
@@ -66,7 +66,7 @@ function Footer() {
                   </svg>
                   </span>
                   <div class="space-y-0.5">
-                    <a href="tel:+919672777506" class="block text-neutral-300 hover:text-white hover:underline underline-offset-4">+91 9672777506</a>
+                    <a href="tel:+919672777506" class="block text-neutral-300 hover:text-white hover:underline underline-offset-4  text-decoration-none">+91 9672777506</a>
                     </div>
                     </li>
               </ul>
@@ -75,8 +75,12 @@ function Footer() {
 
 
 
-          <div><h4 class="relative text-sm font-extrabold uppercase tracking-wide text-white
-                           after:mt-1 after:block after:h-0.5 after:w-12 after:bg-amber-400 after:content-['']">COMPANY</h4><ul class="mt-6 space-y-3"><li><a class="text-neutral-300 hover:text-white hover:underline underline-offset-4" href="/about">About Us</a></li><li><a class="text-neutral-300 hover:text-white hover:underline underline-offset-4" href="/blog">Services</a></li><li><a class="text-neutral-300 hover:text-white hover:underline underline-offset-4" href="/contact">Contact Us</a></li></ul></div>
+          <div>
+            <h4 class="relative text-sm font-extrabold uppercase tracking-wide text-white after:mt-1 after:block after:h-0.5 after:w-12 after:bg-amber-400 after:content-['']">COMPANY</h4>
+                <ul class="mt-6 space-y-3">
+                  <li><a class="text-neutral-300 hover:text-white hover:underline underline-offset-4 text-decoration-none" href="/about">About Us</a></li>
+                  <li><a class="text-neutral-300 hover:text-white hover:underline underline-offset-4 text-decoration-none" href="/blog">Services</a></li>
+                  <li><a class="text-neutral-300 hover:text-white hover:underline underline-offset-4 text-decoration-none" href="/contact">Contact Us</a></li></ul></div>
 
 
           {/* Company
@@ -95,16 +99,16 @@ function Footer() {
           <div><h4 class="relative text-sm font-extrabold uppercase tracking-wide text-white
                            after:mt-1 after:block after:h-0.5 after:w-12 after:bg-amber-400 after:content-['']">FOLLOW US</h4>
                            <div className="flex space-x-4 pt-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-500">
+              <a href="https://www.facebook.com/profile.php?id=61579922421871" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-500">
                 <FaFacebook size={30} />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-500">
+              <a href="https://x.com/FinanceSaarthi" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-500">
                 <FaTwitter size={30} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-500">
+              <a href="https://www.linkedin.com/in/finance-saarthi-advisory-96089b37a" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-500">
                 <FaLinkedin size={30} />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-500">
+              <a href="https://www.instagram.com/financesaarthi?igsh=MXUxaWVwNDJ6Mm15aA==" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-500">
                 <FaInstagram size={30} />
               </a>
             </div>

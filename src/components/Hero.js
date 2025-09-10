@@ -34,7 +34,7 @@ const Hero = () => {
         <h1>Your Trusted Partner for All Financial and Tax Needs.</h1>
         <p>Providing quality Audit, Taxation, Advisory & Compliance services</p>
         <div className="hero-buttons">
-          <a href="#footer" className="btn-primary">Get in Touch</a>
+          <a href="/contactpage" className="btn-primary">Get in Touch</a>
           <a href="#services" className="btn-secondary">Our Services</a>
         </div>
       </div>

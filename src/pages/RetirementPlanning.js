@@ -8,7 +8,8 @@ import img3 from "../images/retire/img3.jpg";
 import img4 from "../images/retire/img4.png";
 import img5 from "../images/retire/img5.jpg";
 import img6 from "../images/retire/img6.jpg";
-import PhotoGrid from '../components/PhotoGrid'
+import PhotoGrid from '../components/PhotoGrid';
+import { Link } from 'react-router-dom';
 
 const RetirementPlanning = () => {
   const retirementServices = [
@@ -59,19 +60,14 @@ const RetirementPlanning = () => {
     <PhotoGrid items={retirementServices} subtitle="Comprehensive Retirement Solution"/>
    
     
-    <section className="position-relative text-center mt-5 text-white">
+    {/* <section className="position-relative text-center mt-5 text-white">
         <img
           src={bridge}
           alt='bridge'
           className="w-100 img-fluid"
           style={{ maxHeight: "350px", objectFit: "cover" }}
         />
-        <div className="container-sm w-75 position-absolute top-50 start-50 translate-middle text-center px-3 ">
-          <h1 className="fw-bold display-5 py-3">Your Bridge to Retirement</h1>
-          <h5>"We are driven, not only to improve the operational efficiency of your retirement plan, but the financial health of its participants as well."</h5>
-          <button className="btn rounded shadow-lg mt-3 text-dark" style={{backgroundColor:"#c4e9ffb0"}}><b>CONTACT US</b></button>
-        </div>
-      </section>
+      </section> */}
     </>
   );
 };

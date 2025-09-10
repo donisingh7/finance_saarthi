@@ -1,141 +1,71 @@
 import React from "react";
+import box1 from "../images/industries/box1.jpeg";
+import box2 from "../images/industries/box2.jpg";
+import box3 from "../images/industries/box3.jpg";
+import box4 from "../images/industries/box4.jpeg";
+import box5 from "../images/industries/box5.jpg";
+import box6 from "../images/industries/box6.webp";
+import box7 from "../images/industries/box7.jpeg";
+import box8 from "../images/industries/box8.jpeg";
+import box01 from "../images/industries/box01.png";
+import box9 from "../images/industries/box9.jpg";
+import box10 from "../images/industries/box10.jpeg";
+import box11 from "../images/industries/box11.jpeg";
+import box12 from "../images/industries/box12.png";
+import box13 from "../images/industries/box13.jpeg";
+import box14 from "../images/industries/box14.jpeg";
 
-// If your images are in /public/images, use strings like "/images/industry.webp"
-// If they are inside src/assets, import them, e.g.:
-// import heroImg from "../assets/industry.webp";
-//
-// Below I assume you keep them in /public/images/industries/...
-const HERO = "/public/images/industries/industry.webp";
-
-const industries = [
-  {
-    title: "Professional Services",
-    img: "/public/images/industries/box1.jpeg",
-    desc: "Specialized solutions for consulting, legal, and advisory firms."
-  },
-  {
-    title: "Audit Firms",
-    img: "/public/images/industries/box2.jpg",
-    desc: "End-to-end support for statutory, internal and forensic audits."
-  },
-  {
-    title: "GST / VAT Services",
-    img: "/public/images/industries/box3.jpg",
-    desc: "Compliance, advisory and automation for indirect taxes."
-  },
-  {
-    title: "Compliance Firms",
-    img: "/public/images/industries/box4.jpeg",
-    desc: "Entity, secretarial and regulatory compliance at scale."
-  },
-  {
-    title: "Corporate Firms",
-    img: "/public/images/industries/box5.jpg",
-    desc: "Finance, FP&A and controllership for growing enterprises."
-  },
-  {
-    title: "Governance",
-    img: "/public/images/industries/box6.webp",
-    desc: "Policies, processes and governance frameworks that stick."
-  },
-  {
-    title: "Banking & Financial Institutions",
-    img: "/public/images/industries/box7.jpeg",
-    desc: "Risk, compliance and reporting for BFSI ecosystems."
-  },
-  {
-    title: "Private Equity & Venture Capital",
-    img: "/public/images/industries/box8.jpeg",
-    desc: "Deal support, portfolio monitoring and value creation."
-  },
-  {
-    title: "Infrastructure",
-    img: "/public/images/industries/box1.png", // you had one card with default bg; point to a real image
-    desc: "Financial modeling and program governance for infra projects."
-  },
-  {
-    title: "Information Technology & Services",
-    img: "/public/images/industries/box9.jpg",
-    desc: "SaaS metrics, revenue recognition and global compliance."
-  },
-  {
-    title: "Hospitality & Healthcare",
-    img: "/public/images/industries/box10.jpeg",
-    desc: "Unit economics, operations and regulatory hygiene."
-  },
-  {
-    title: "Media & Entertainment",
-    img: "/public/images/industries/box11.jpeg",
-    desc: "IP, royalties and multi-platform monetization control."
-  },
-  {
-    title: "Non-Governmental Organizations",
-    img: "/public/images/industries/box12.png",
-    desc: "Grant accounting, donor reporting and audit-readiness."
-  },
-  {
-    title: "Realty Sector",
-    img: "/public/images/industries/box14.jpeg",
-    desc: "Project cashflows, RERA and capitalization discipline."
-  }
+const features = [
+  { title: "Professional Services", img: box1 },
+  { title: "Audit Firms", img: box2 },
+  { title: "GST/VAT Services", img: box3 },
+  { title: "Compliance Firms", img: box4 },
+  { title: "Corporate Firms", img: box5 },
+  { title: "Governance", img: box6 },
+  { title: "Banking & Financial Institutions", img: box7 },
+  { title: "Private Equity & Venture Capitalist", img: box8 },
+  { title: "Infrastructure", img: box01 }, 
+  { title: "Information Technology & Services", img: box9 },
+  { title: "Hospitality & Healthcare", img: box10 },
+  { title: "Media & Entertainment", img: box11 },
+  { title: "Charity", img: box12 },
+  { title: "Non-Governmental Organisations", img: box13 },
+  { title: "Realty Sector", img: box14 },
 ];
 
-function IndustryCard({ title, img, desc }) {
-  return (
-    <article className="industry-card">
-      <div
-        className="industry-card__image"
-        style={{ backgroundImage: `url(${img})` }}
-        aria-label={title}
-        role="img"
-      />
-      <div className="industry-card__text">
-        <h3>{title}</h3>
-        <p>{desc}</p>
-      </div>
-    </article>
-  );
-}
 
 export default function Industries() {
   return (
     <main className="industries-page">
-      {/* HERO */}
-      <section
-        className="industries-hero"
-        style={{backgroundImage: `url(/images/industries/industry.webp)`}}
-      >
-        <div className="industries-hero__content">
+      {/* Hero */}
+      <section className="tech-bg">
+        <div className="content">
           <h1>Industries</h1>
-          <p>
-            At Finance Saarthi, we work across diverse industries, delivering
-            tailored solutions that help businesses grow, adapt, and stay
-            future-ready. Each industry comes with unique challenges, and our
-            expertise ensures that we provide the right strategies to achieve
-            sustainable success.
+          <p className="hero-sub">
+            At Finance Saarthi, we work across diverse industries, delivering tailored
+            solutions that help businesses grow, adapt, and stay future-ready. Each
+            industry comes with unique challenges, and our expertise ensures we
+            provide the right strategies to achieve sustainable success.
           </p>
         </div>
       </section>
 
-      {/* TITLE */}
-      <section className="industries-title">
-        <h2>Industries We Serve</h2>
+      {/* Section Title */}
+      <section className="title-outer">
+        <h1>Industries We Serve</h1>
       </section>
 
-      {/* GRID */}
-      <section className="industries-grid">
-        {industries.map((item) => (
-          <IndustryCard key={item.title} {...item} />
-        ))}
-      </section>
-
-      {/* Optional CTA strip (you can remove if not needed) */}
-      {/* <section className="industries-cta">
-        <div className="industries-cta__box">
-          <h3>Need help deciding the right solution?</h3>
-          <button type="button" className="btn-primary">Enquire Now</button>
+      {/* Grid */}
+      <div className="grid-container-industries">
+      {features.map((item, index) => (
+        <div className="grid-item-industries" key={index}>
+          <img src={item.img} alt={item.title} />
+          <div className="content-industries">
+            <h3>{item.title}</h3>
+          </div>
         </div>
-      </section> */}
+      ))}
+    </div>
     </main>
   );
 }

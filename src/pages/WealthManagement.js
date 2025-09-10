@@ -67,9 +67,6 @@ const WealthManagement = () => {
   ];
 
   
-    
- 
-
 
 
   return (

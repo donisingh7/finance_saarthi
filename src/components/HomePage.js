@@ -17,7 +17,7 @@ function HomePage() {
       <Services />
       <Testimonials />
       {/* <Contact /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

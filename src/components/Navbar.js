@@ -122,7 +122,7 @@ const Navbar = () => {
 
           <ul className="nav-links">
             <li className="nav-item"><Link className="nav-link" to="/" onClick={closeAndSuppress}>Home</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/about" onClick={closeAndSuppress}>About</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/aboutpage" onClick={closeAndSuppress}>About</Link></li>
 
             {/* SERVICES */}
             <li
@@ -195,7 +195,7 @@ const Navbar = () => {
             <li className="nav-item"><Link className="nav-link" to="/contactpage" onClick={closeAndSuppress}>Contact</Link></li>
           </ul>
 
-          <Link to="/services" className="btn-get-started" onClick={closeAndSuppress}>Get Started</Link>
+          <Link to="/contactpage" className="btn-get-started" onClick={closeAndSuppress}>Get Started</Link>
         </div>
       </nav>
     </header>
