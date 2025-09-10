@@ -30,14 +30,15 @@ export default function ContactPage() {
     setStatus("Sending…");
 
     try {
-      const res = await fetch(
-        `${process.env.REACT_APP_API_URL || "http://localhost:5000"}/contact`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(form),
-        }
-      );
+      // API URL from .env.local
+      const API_URL = process.env.REACT_APP_API_URL;
+      if (!API_URL) throw new Error("API URL not found in environment variables.");
+
+      const res = await fetch(`${API_URL}/contact`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
 
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data?.error || "Failed");
@@ -93,28 +94,16 @@ export default function ContactPage() {
           </ul>
 
           <div className="contact-details__social">
-            <a
-              href="https://www.facebook.com/profile.php?id=61579922421871"
-              aria-label="Facebook"
-            >
+            <a href="https://www.facebook.com/profile.php?id=61579922421871" aria-label="Facebook">
               <FaFacebookF />
             </a>
-            <a
-              href="https://x.com/FinanceSaarthi"
-              aria-label="Twitter"
-            >
+            <a href="https://x.com/FinanceSaarthi" aria-label="Twitter">
               <FaTwitter />
             </a>
-            <a
-              href="https://www.linkedin.com/in/finance-saarthi-advisory-96089b37a"
-              aria-label="LinkedIn"
-            >
+            <a href="https://www.linkedin.com/in/finance-saarthi-advisory-96089b37a" aria-label="LinkedIn">
               <FaLinkedinIn />
             </a>
-            <a
-              href="https://www.instagram.com/financesaarthi?igsh=MXUxaWVwNDJ6Mm15aA=="
-              aria-label="Instagram"
-            >
+            <a href="https://www.instagram.com/financesaarthi?igsh=MXUxaWVwNDJ6Mm15aA==" aria-label="Instagram">
               <FaInstagram />
             </a>
           </div>
@@ -128,55 +117,25 @@ export default function ContactPage() {
         <form className="contact-form" onSubmit={handleSubmit} noValidate>
           <div className="form-group">
             <label htmlFor="name">Your Name</label>
-            <input
-              id="name"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              type="text"
-              required
-            />
+            <input id="name" name="name" value={form.name} onChange={handleChange} type="text" required />
           </div>
 
           <div className="form-group">
             <label htmlFor="email">Your Email</label>
-            <input
-              id="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              type="email"
-              required
-            />
+            <input id="email" name="email" value={form.email} onChange={handleChange} type="email" required />
           </div>
 
           <div className="form-group">
             <label htmlFor="subject">Subject</label>
-            <input
-              id="subject"
-              name="subject"
-              value={form.subject}
-              onChange={handleChange}
-              type="text"
-              required
-            />
+            <input id="subject" name="subject" value={form.subject} onChange={handleChange} type="text" required />
           </div>
 
           <div className="form-group">
             <label htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              value={form.message}
-              onChange={handleChange}
-              required
-            />
+            <textarea id="message" name="message" rows="5" value={form.message} onChange={handleChange} required />
           </div>
 
-          <button type="submit" className="submit-btn">
-            Send Message
-          </button>
+          <button type="submit" className="submit-btn">Send Message</button>
         </form>
 
         {status && <div className="form-status">{status}</div>}
