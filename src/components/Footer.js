@@ -69,6 +69,7 @@ function Footer() {
                     <a href="tel:+919672777506" class="block text-neutral-300 hover:text-white hover:underline underline-offset-4  text-decoration-none">+91 9672777506</a>
                     </div>
                     </li>
+                    
               </ul>
           </div>
 
@@ -80,7 +81,9 @@ function Footer() {
                 <ul class="mt-6 space-y-3">
                   <li><a class="text-neutral-300 hover:text-white hover:underline underline-offset-4 text-decoration-none" href="/aboutpage">About Us</a></li>
                   <li><a class="text-neutral-300 hover:text-white hover:underline underline-offset-4 text-decoration-none" href="/industries">Industries</a></li>
-                  <li><a class="text-neutral-300 hover:text-white hover:underline underline-offset-4 text-decoration-none" href="/contactpage">Contact Us</a></li></ul></div>
+                  <li><a class="text-neutral-300 hover:text-white hover:underline underline-offset-4 text-decoration-none" href="/contactpage">Contact Us</a></li>
+                  <li><a class="text-neutral-300 hover:text-white hover:underline underline-offset-4 text-decoration-none" href="/privacy-policy">privacy policy</a></li></ul></div>
+
 
 
           {/* Company
@@ -91,6 +94,7 @@ function Footer() {
                 <li><a className="footer-link" href="/blog">Services</a></li>
                 <li><a className="footer-link" href="/blog">Industries</a></li>
                 <li><a className="footer-link" href="/contact">Contact Us</a></li>
+                <li><a className="footer-link" href="/privacy-policy">Privacy Policy</a></li>
               </ul>
           </div> */}
 

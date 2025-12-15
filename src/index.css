@@ -358,7 +358,7 @@ h2 {
 
 .hero {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('https://www.resetconsultants.gr/wp-content/uploads/2018/10/financial-img1-1844x922.jpg') center/cover no-repeat;
+  url("./assets/hero-bg.jpg") center / cover no-repeat;
   height: 90vh;
   display: flex;
   align-items: center;

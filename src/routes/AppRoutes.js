@@ -23,6 +23,9 @@ import SustainableFinance from "../pages/Sustainable";
 import FraudInvestigations from "../pages/Fraud";
 import RegulatoryCompliance from "../pages/Regulatory";
 import AuditAssurance from "../pages/AuditAssurance";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
+
+
 
 
 
@@ -58,6 +61,8 @@ const AppRoutes = () => {
         <Route path="/services/actuarial" element={<ActuarialServices />} />
         
         <Route path="/services/turnaround" element={<SpecialPlanning />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
       </Routes>
     </>
   );
